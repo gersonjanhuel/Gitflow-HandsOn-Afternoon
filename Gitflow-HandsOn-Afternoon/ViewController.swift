@@ -36,7 +36,8 @@ class ViewController: UIViewController {
     
     // Reset the background to white!
     @IBAction func buttonResetPressed(_ sender: UIButton) {
-        
+        // do reset
+        self.view.backgroundColor = .white
     }
     
 }
