@@ -15,9 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-Hf-wlp">
-                                <rect key="frame" x="152" y="386" width="112" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpa-Hf-wlp">
+                                <rect key="frame" x="151" y="386" width="112" height="77"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -26,10 +25,13 @@
                                     <action selector="buttonResetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ni-Uk-HTq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-wW-oAQ">
-                                <rect key="frame" x="151" y="276" width="113" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-wW-oAQ">
+                                <rect key="frame" x="150.5" y="276" width="113" height="76"/>
                                 <color key="backgroundColor" red="0.92156862750000001" green="0.32549019610000002" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="CDF-86-opX"/>
+                                    <constraint firstAttribute="width" constant="113" id="ql1-oB-YSz"/>
+                                </constraints>
                                 <state key="normal" title="Color it!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -39,6 +41,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HtN-wW-oAQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IdC-oU-Ca1"/>
+                            <constraint firstItem="xpa-Hf-wlp" firstAttribute="height" secondItem="HtN-wW-oAQ" secondAttribute="height" multiplier="1.01316" id="KpU-qR-kgN"/>
+                            <constraint firstItem="HtN-wW-oAQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="232" id="NTy-fw-khO"/>
+                            <constraint firstItem="xpa-Hf-wlp" firstAttribute="width" secondItem="HtN-wW-oAQ" secondAttribute="width" multiplier="0.99115" id="Vtd-kQ-hWA"/>
+                            <constraint firstItem="xpa-Hf-wlp" firstAttribute="top" secondItem="HtN-wW-oAQ" secondAttribute="bottom" constant="34" id="cEV-nQ-UlJ"/>
+                            <constraint firstItem="xpa-Hf-wlp" firstAttribute="centerX" secondItem="HtN-wW-oAQ" secondAttribute="centerX" id="vY4-xP-6pJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
