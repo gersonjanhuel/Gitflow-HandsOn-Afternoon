@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Gitflow-HandsOn-Afternoon
+//  Gitflow-HandsOn-Afternoon Release Version
 //
 //  Created by Gerson Janhuel on 20/05/20.
 //  Copyright © 2020 Elcode Studio. All rights reserved.
