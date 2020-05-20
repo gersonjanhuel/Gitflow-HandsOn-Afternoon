@@ -20,6 +20,17 @@ class ViewController: UIViewController {
     // When pressed: change the UIView background color according to the button color
     @IBAction func buttonColorPressed(_ sender: UIButton) {
         // do your code here
+        let red : CGFloat = .random(in: 0...1)
+        let blue : CGFloat = .random(in: 0...1)
+        let green : CGFloat = .random(in: 0...1)
+        
+        let color = UIColor.init(red: red, green: green, blue: blue, alpha: 1)
+        
+        UIView.animate(withDuration: 1) {
+            self.view.backgroundColor = self.colorButton.backgroundColor
+            self.colorButton.backgroundColor = color
+        }
+        
     }
     
     
